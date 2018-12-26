@@ -216,6 +216,7 @@ public class RecordVideoFragment extends BaseRecordFragment implements RecordSta
 
     @Override
     public void onRecordFinish(final String videoPath) {
+        // TODO 未将视频保存至内存
         startPreview(VideoPlayFragment.FILE_TYPE_VIDEO, videoPath);
     }
 
