@@ -78,10 +78,10 @@ public class TakePhotoVideoHelper {
      */
     public static final void startFileExplorer(Activity activity, int requestCode, String mimeType) {
         Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
-        //intent.setType(“image/*”);//选择图片
-        //intent.setType(“audio/*”); //选择音频
-        //intent.setType(“video/*”); //选择视频 （mp4 3gp 是android支持的视频格式）
-        //intent.setType(“video/*;image/*”);//同时选择视频和图片
+        //intent.setType("image/*");//选择图片
+        //intent.setType("audio/*"); //选择音频
+        //intent.setType("video/*"); //选择视频 （mp4 3gp 是android支持的视频格式）
+        //intent.setType("video/*;image/*");//同时选择视频和图片
         intent.setType(mimeType);//无类型限制
         intent.addCategory(Intent.CATEGORY_OPENABLE);
         activity.startActivityForResult(intent, requestCode);

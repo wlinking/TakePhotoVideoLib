@@ -39,7 +39,8 @@ public class TakePhotoVideoActivity extends AppCompatActivity {
         if (savedInstanceState == null) {
             getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.hyf_take_photo_video_fragment_container, RecordVideoFragment.newInstance(mode, duration, savePath, 1024 * 1024 * 30L))
+                    .replace(R.id.hyf_take_photo_video_fragment_container,
+                            RecordVideoFragment.newInstance(mode, duration, savePath, 1024 * 1024 * 30L))
                     .commit();
         }
     }
